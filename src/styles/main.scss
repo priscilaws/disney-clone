@@ -1,3 +1,5 @@
+@use 'hero';
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +21,7 @@ body {
     color: $corTextoPrincipal;
 }
 
-@mixin title($fontSize: 28px) {
+@mixin title($fontSize: 40px) {
     @include text($fontSize);
     color: $corTextoSecundario;
 }
@@ -36,21 +38,20 @@ body {
     @include text (12px);
 }
 
-.link-text {
-    @include text(18px);
-    color: $corTextoSecundario;
-    text-decoration: underline;
-}
-
 .title--big {
     @include title(44px);
 }
 
 .title {
-    @include title (40px);
+    @include title;
 }
 
 .title--small {
     @include title(28px);
 }
 
+.link-text {
+    @include text(18px);
+    color: $corTextoSecundario;
+    text-decoration: underline;
+}
