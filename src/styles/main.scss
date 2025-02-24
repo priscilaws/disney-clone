@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@
 
 body {
     background-color: variaveis.$corDeFundo;
+    font-family: 'Lato', sans-serif;
 }
 
 @mixin text($fontSize: 16px) {
