@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,38 @@
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 
 </head>
+
+
+<header class="header">
+    <div class="header__container">
+        <h1>
+            <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Dsiney+">
+        </h1>
+        <ul class="header__links">
+            <li class="header__links__item">
+                <a href="#" class="button button--secundary">Assine Agora</a>
+            </li>
+            <li class="header__links__item">
+                <a href="#" class="button button--dark">Entrar</a>
+            </li>
+        </ul>
+
+    </div>
+</header>
+
+
 <body>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores historias em um so lugar.
             </h3>
@@ -24,18 +47,18 @@
                 <a href="#" class="link-text">Assinar o Disney+</a>
                 <br>
                 <span class="text">
-                R$ 27,90/mes ou 279,90 a vista*
+                    R$ 27,90/mes ou 279,90 a vista*
                 </span>
             </p>
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button>ASSINE AGORA</button>
+                    <button class="button">ASSINE AGORA</button>
                     <span class="text">R$ 45,90/mes* </span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button>ASSINE AGORA</button>
+                    <button class="button">ASSINE AGORA</button>
                     <span class="text">R$ 45,90/mes* </span>
                 </li>
             </ul>
@@ -53,7 +76,7 @@
                 MAIS POPULARES
             </button>
             <button data-tab-button="star_plus" class="shows__tabs__button">
-                MAIS  NO STAR+
+                MAIS NO STAR+
             </button>
         </nav>
         <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
@@ -118,12 +141,49 @@
         </ul>
     </section>
 
+    <section class="plans">
+        <h2 class="title--big">
+            Escolha seu plano
+        </h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disneyplus_underline.png" alt="disney +">
+                <strong class="title--small">R$ 27,90/mes*</strong>
+                <p class="text--big">
+                    No Disney+ você encontra as últimas estreias do cinema,originais e clássicos insequecíveis.
+                </p>
+                <button class="button">Assine Agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="disney +">
+                <strong class="title--small">R$ 45,90/mes*</strong>
+                <p class="text--big">
+                    Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
+                </p>
+                <button class="button">Assine Agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="disney +">
+                <strong class="title--small">R$ 55,90/mes*</strong>
+                <p class="text--big">
+                    Disney+, Star+ e STARZPLAY em um plano espacial. Assine agora os três serviços juntos.
+                </p>
+                <button class="button">Assine Agora</button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
+        </p>
+    </section>
+
     <section class="image-text-section ">
         <img src="./dist/images/tv_pc_tablet_celular.png" alt="imagem com TV, Computador, Tablet e Celular.">
         <div class="image-text-section__text_container">
             <h2 class="title">Assista do seu jeito</h2>
             <p class="text--big">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, assumenda atque aut nemo unde consequuntur. Quam perferendis rem exercitationem labore saepe possimus commodi iusto fuga ea eligendi! Quis, voluptas porro!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, assumenda atque aut nemo unde
+                consequuntur. Quam perferendis rem exercitationem labore saepe possimus commodi iusto fuga ea eligendi!
+                Quis, voluptas porro!
             </p>
         </div>
     </section>
@@ -133,7 +193,9 @@
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e series</h2>
             <p class="text--big">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, assumenda atque aut nemo unde consequuntur. Quam perferendis rem exercitationem labore saepe possimus commodi iusto fuga ea eligendi! Quis, voluptas porro!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, assumenda atque aut nemo unde
+                consequuntur. Quam perferendis rem exercitationem labore saepe possimus commodi iusto fuga ea eligendi!
+                Quis, voluptas porro!
             </p>
         </div>
     </section>
@@ -193,8 +255,6 @@
             </li>
 
 
-
-            
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
                     Pergunta?
@@ -231,47 +291,52 @@
     </section>
 
     <footer class="footer">
-    <div class="footer__container">
-        <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="disney logo">
-        <ul class="footer__links">
-            <li class="footer__links__item">
-                <div class="language-selector">
-                    <img src="./dist/images/icones/globe.svg" alt="Globo mundi">
-                <select>
-                    <option>English</option>
-                    <option selected>Portugues</option>
-                </select>
-                </div>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Termos e condicoes de uso</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Politica de privacidade</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Protecao de dados no Brasil</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Anuncios personalizados</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Dispositivos compativeis</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Ajuda</a>
-            </li>
-            <li class="footer__links__item">
-                <a href="#" class="text--small">Sobre o Disney+</a>
-            </li>
-        </ul>
-        <p class="text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis mollitia libero corporis facere obcaecati tempora perspiciatis consectetur accusamus? Sint velit laborum modi iste soluta corporis quo provident reiciendis facilis sapiente.
-        </p>
-        <p class="text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa mollitia omnis porro eum nisi! A voluptatum labore quo, aliquam aspernatur nesciunt ut at modi, magni sequi impedit optio iure!
-        </p>
-    </div>
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="disney logo">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo mundi">
+                        <select>
+                            <option>English</option>
+                            <option selected>Portugues</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e condicoes de uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Politica de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Protecao de dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anuncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Dispositivos compativeis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis mollitia libero
+                corporis facere obcaecati tempora perspiciatis consectetur accusamus? Sint velit laborum modi iste
+                soluta corporis quo provident reiciendis facilis sapiente.
+            </p>
+            <p class="text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa mollitia omnis
+                porro eum nisi! A voluptatum labore quo, aliquam aspernatur nesciunt ut at modi, magni sequi impedit
+                optio iure!
+            </p>
+        </div>
     </footer>
 
     <script src="./src/main.js"></script>
 </body>
+
 </html>

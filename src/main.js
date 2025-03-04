@@ -1,11 +1,28 @@
-document.addEventListener ('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('[data-tab-button]');
-    const questions = document.querySelectorAll('[data-faq-question]')
+    const questions = document.querySelectorAll('[data-faq-question]');
 
-    console.log(buttons)
+    const heroSection = document.querySelector('.hero');
+
+    if (heroSection) {  // Verifica se o elemento existe antes de acessar suas propriedades
+        const alturaHero = heroSection.clientHeight;
+
+        window.addEventListener('scroll', function () {
+            const posicaoAtual = window.scrollY;
+
+            if (posicaoAtual < alturaHero) {
+                ocultaElementosDoHeader();
+            } else {
+                exibeElementosDoHeader();
+            }
+        });
+    }
+
+
+    //Seção de Atrações, programação das abas
 
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', function(event) {
+        buttons[i].addEventListener('click', function (event) {
             const abaAlvo = event.target.dataset.tabButton;
             const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
             escondeTodasAbas();
@@ -15,10 +32,22 @@ document.addEventListener ('DOMContentLoaded', function () {
         })
     }
 
+    //Seção FAQ, accordion
+
     for (let i = 0; i < questions.length; i++) {
         questions[i].addEventListener('click', abreOuFechaResposta);
     }
 })
+
+function ocultaElementosDoHeader() {
+    const header = document.querySelector('header');
+    header.classList.add('header--is-hidden');
+}
+
+function exibeElementosDoHeader() {
+    const header = document.querySelector('header');
+    header.classList.remove('header--is-hidden');
+}
 
 function abreOuFechaResposta(elemento) {
     const classe = 'faq__questions__item--is-open';
@@ -37,7 +66,7 @@ function removeBotaoAtivo(elemento) {
 function escondeTodasAbas() {
     const tabsContainer = document.querySelectorAll('[data-tab-id]');
 
-    for (let i = 0; i < tabsContainer.length; i++) { 
-        tabsContainer [i].classList.remove('shows__list--is-active');
+    for (let i = 0; i < tabsContainer.length; i++) {
+        tabsContainer[i].classList.remove('shows__list--is-active');
     }
 }
