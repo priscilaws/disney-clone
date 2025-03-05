@@ -10,6 +10,15 @@
         justify-content: space-around;
         margin-top: 50px;
 
+        @media (max-width:768px) {
+            display: block;
+            margin-top: 0;
+        }
+
+        .button {
+            margin-top: 24px;
+        }
+
         &__item {
             text-align: center;
             padding: 60px 44px 44px;
@@ -29,6 +38,10 @@
             strong {
                 display: block;
                 margin-top: 24px;
+
+                @media (max-width:768px) {
+                    margin-top: 8px;
+                }
             }
         }
     }
